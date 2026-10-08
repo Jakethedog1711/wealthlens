@@ -1,0 +1,34 @@
+# Secrets
+.env
+*.pem
+aws-credentials*
+
+# Java / Maven / Gradle
+target/
+build/
+.gradle/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Data (generated, never committed)
+pipeline/data/
+*.parquet
+*.csv
+
+# Power BI
+*.pbix.bak
+
+# IDEs and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
