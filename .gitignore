@@ -32,3 +32,4 @@ pipeline/data/
 *.iml
 .DS_Store
 Thumbs.db
+.venv/
