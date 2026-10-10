@@ -6,7 +6,7 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 
 * \[x] Repo structure, README, Docker Postgres, architecture doc
 * \[x] AWS account created, $5 budget alert set
-* \[ ] Flyway schema migrations (core, market data, analytics, AI audit)
+* \[x] Flyway schema migrations (core, market data, analytics, AI audit)
 * \[ ] Synthetic client + transaction generator (Python), incl. a few suspicious patterns
 * \[ ] Spring Boot skeleton: `GET /clients`, `GET /clients/{id}`
 * \[ ] Portfolio valuation service + JUnit tests
@@ -22,7 +22,7 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 ## Weeks 3–6 — AI layer
 
 * \[ ] Wealth Copilot: drift summaries + client letters (Spring AI)
-* \[ ] `ai\_output` audit trail
+* \[ ] `ai\\\_output` audit trail
 * \[ ] Anomaly rules engine + compliance explanations
 * \[ ] Deploy API on AWS
 
