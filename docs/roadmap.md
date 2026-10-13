@@ -1,8 +1,10 @@
 # Roadmap
 
-Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate (DEA-C01) alongside, about 1 hour a day.
+Target: **project portfolio-ready by 20 November 2026** (compressed from mid-December on 13 Oct, after Weeks 1–2 moved faster than planned).
+The AWS Data Engineer Associate (DEA-C01) runs on its own track: about 1 hour a day of study, exam in early-to-mid December.
+Dates are re-checked at the end of each week.
 
-## Week 1 — Foundation
+## Week 1 — Foundation ✅
 
 * \[x] Repo structure, README, Docker Postgres, architecture doc
 * \[x] AWS account created, $5 budget alert set
@@ -11,28 +13,47 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 * \[x] Spring Boot skeleton: `GET /clients`, `GET /clients/{id}`
 * \[x] Portfolio valuation service + JUnit tests
 
-## Week 2 — Drift + first pipeline
+## Week 2 (13–16 Oct) — Drift + first pipeline
 
 * \[x] Drift calculation service + tests, `GET /clients/{id}/drift`
 * \[x] Pipeline v1: JSE prices → S3 (partitioned by date) → Postgres
+* \[ ] Rotate the AWS access key for `wealthlens-dev`
+* \[ ] Study notes: everything built so far (architecture, files, decisions, interview Q&A)
 * \[ ] Athena table over S3 data
 * \[ ] Power BI allocation-vs-target dashboard
 * \[ ] README screenshots + LinkedIn post
 
-## Weeks 3–6 — AI layer
+## Week 3 (19–23 Oct) — Wealth Copilot (AI layer, part 1)
 
-* \[ ] Wealth Copilot: drift summaries + client letters (Spring AI)
-* \[ ] `ai\\\_output` audit trail
-* \[ ] Anomaly rules engine + compliance explanations
-* \[ ] Deploy API on AWS
+* \[ ] Choose LLM + API access; Spring AI set-up
+* \[ ] Drift summaries: the LLM explains numbers Java already calculated (it never calculates)
+* \[ ] Client letters, with advisor review before anything is "sent"
+* \[ ] `ai_output` audit trail: inputs, prompt version, model, tokens, review status
 
-## Weeks 7–10 — Data engineering depth
+## Week 4 (26–30 Oct) — Anomaly engine (AI layer, part 2)
 
-* \[ ] Glue/Lambda transforms, SARB rates, FX
-* \[ ] Scheduled pipeline runs
+* \[ ] Rules for the 4 planted patterns (structuring, rapid in-out, dormant spike, profile mismatch)
+* \[ ] Score the engine against `planted_anomalies.csv` (did it catch all 12? any false alarms?)
+* \[ ] LLM compliance explanations for each flag, logged to `ai_output`
 
-## Weeks 11–12 — Polish
+## Week 5 (2–6 Nov) — Data engineering depth
 
+* \[ ] Glue or Lambda transform: raw CSV → curated Parquet
+* \[ ] Second source: SARB rates / USD-ZAR FX
+* \[ ] Scheduled pipeline runs (EventBridge)
+
+## Week 6 (9–13 Nov) — Deploy + polish
+
+* \[ ] Deploy API on AWS (container, cloud database, HTTPS, within budget)
 * \[ ] Demo video, final README, CV update
-* \[ ] Sit DEA-C01 at a test centre
 
+## Buffer (16–20 Nov) — Own the code
+
+* \[ ] Make 2–3 small changes without AI help (e.g. filter clients by risk profile)
+* \[ ] Practise explaining the architecture and key decisions out loud
+* \[ ] Fix anything the deploy or earlier weeks pushed back
+
+## DEA-C01 (separate track)
+
+* \[ ] ~1 hour a day of study alongside the project
+* \[ ] Book and sit the exam at a test centre (early-to-mid December)
