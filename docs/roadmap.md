@@ -9,7 +9,7 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 * \[x] Flyway schema migrations (core, market data, analytics, AI audit)
 * \[x] Synthetic client + transaction generator (Python), incl. a few suspicious patterns
 * \[x] Spring Boot skeleton: `GET /clients`, `GET /clients/{id}`
-* \[ ] Portfolio valuation service + JUnit tests
+* \[x] Portfolio valuation service + JUnit tests
 
 ## Week 2 — Drift + first pipeline
 
