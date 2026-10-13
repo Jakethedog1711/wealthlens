@@ -13,7 +13,7 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 
 ## Week 2 — Drift + first pipeline
 
-* \[ ] Drift calculation service + tests, `GET /clients/{id}/drift`
+* \[x] Drift calculation service + tests, `GET /clients/{id}/drift`
 * \[ ] Pipeline v1: JSE prices → S3 (partitioned by date) → Postgres
 * \[ ] Athena table over S3 data
 * \[ ] Power BI allocation-vs-target dashboard
