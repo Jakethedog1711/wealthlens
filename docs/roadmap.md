@@ -7,7 +7,7 @@ Target: portfolio-ready by mid-December 2026. Study AWS Data Engineer Associate 
 * \[x] Repo structure, README, Docker Postgres, architecture doc
 * \[x] AWS account created, $5 budget alert set
 * \[x] Flyway schema migrations (core, market data, analytics, AI audit)
-* \[ ] Synthetic client + transaction generator (Python), incl. a few suspicious patterns
+* \[x] Synthetic client + transaction generator (Python), incl. a few suspicious patterns
 * \[ ] Spring Boot skeleton: `GET /clients`, `GET /clients/{id}`
 * \[ ] Portfolio valuation service + JUnit tests
 
