@@ -30,11 +30,11 @@ Dates are re-checked at the end of each week.
 * \[x] Client letters, with advisor review before anything is "sent" (approve/reject, 409 on double review)
 * \[x] `ai_output` audit trail: inputs, prompt version, model, tokens, review status
 
-## Week 4 (26–30 Oct) — Anomaly engine (AI layer, part 2)
+## Week 4 — Anomaly engine (AI layer, part 2) ✅ (done 17 Oct, ahead of the 26–30 Oct plan)
 
-* \[ ] Rules for the 4 planted patterns (structuring, rapid in-out, dormant spike, profile mismatch)
-* \[ ] Score the engine against `planted_anomalies.csv` (did it catch all 12? any false alarms?)
-* \[ ] LLM compliance explanations for each flag, logged to `ai_output`
+* \[x] Rules for the 4 planted patterns (structuring, rapid in-out, dormant spike, profile mismatch)
+* \[x] Score the engine against `planted_anomalies.csv`: 12/12 caught, 0 false alarms (also checked on 20 other random datasets)
+* \[x] LLM compliance explanations for each flag, logged to `ai_output`
 
 ## Week 5 (2–6 Nov) — Data engineering depth
 
