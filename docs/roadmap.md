@@ -17,9 +17,9 @@ Dates are re-checked at the end of each week.
 
 * \[x] Drift calculation service + tests, `GET /clients/{id}/drift`
 * \[x] Pipeline v1: JSE prices → S3 (partitioned by date) → Postgres
-* \[ ] Rotate the AWS access key for `wealthlens-dev`
+* \[x] Rotate the AWS access key for `wealthlens-dev`
 * \[ ] Study notes: everything built so far (architecture, files, decisions, interview Q&A)
-* \[ ] Athena table over S3 data
+* \[x] Athena table over S3 data
 * \[ ] Power BI allocation-vs-target dashboard
 * \[ ] README screenshots + LinkedIn post
 
