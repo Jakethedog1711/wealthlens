@@ -23,12 +23,12 @@ Dates are re-checked at the end of each week.
 * \[x] Power BI allocation-vs-target dashboard (built 16 Oct; visual polish still to do)
 * \[ ] README screenshots + LinkedIn post
 
-## Week 3 (19–23 Oct) — Wealth Copilot (AI layer, part 1)
+## Week 3 — Wealth Copilot (AI layer, part 1) ✅ (done 16–17 Oct, ahead of the 19–23 Oct plan)
 
-* \[ ] Choose LLM + API access; Spring AI set-up
-* \[ ] Drift summaries: the LLM explains numbers Java already calculated (it never calculates)
-* \[ ] Client letters, with advisor review before anything is "sent"
-* \[ ] `ai_output` audit trail: inputs, prompt version, model, tokens, review status
+* \[x] Choose LLM + API access; Spring AI set-up (Amazon Bedrock, Nova 2 Lite via EU inference profile)
+* \[x] Drift summaries: the LLM explains numbers Java already calculated (it never calculates)
+* \[x] Client letters, with advisor review before anything is "sent" (approve/reject, 409 on double review)
+* \[x] `ai_output` audit trail: inputs, prompt version, model, tokens, review status
 
 ## Week 4 (26–30 Oct) — Anomaly engine (AI layer, part 2)
 

@@ -36,6 +36,19 @@ final class NumberGuard {
         return unknown;
     }
 
+    // plain numbers as they appear in JSON or dates: 48500.00, 2026, 05
+    private static final Pattern PLAIN_NUMBER = Pattern.compile("\\d+(?:\\.\\d+)?");
+
+    /** Every number written in a piece of text, e.g. the facts JSON. "2026-05-13" gives 2026, 5 and 13. */
+    static List<BigDecimal> numbersInText(String text) {
+        List<BigDecimal> numbers = new ArrayList<>();
+        Matcher m = PLAIN_NUMBER.matcher(text);
+        while (m.find()) {
+            numbers.add(new BigDecimal(m.group()));
+        }
+        return numbers;
+    }
+
     private static boolean roundsTo(BigDecimal fact, BigDecimal n) {
         int scale = Math.max(n.scale(), 0);
         return fact.abs().setScale(scale, RoundingMode.HALF_UP).compareTo(n) == 0;
