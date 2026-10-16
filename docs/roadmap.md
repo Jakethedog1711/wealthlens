@@ -20,7 +20,7 @@ Dates are re-checked at the end of each week.
 * \[x] Rotate the AWS access key for `wealthlens-dev`
 * \[ ] Study notes: everything built so far (architecture, files, decisions, interview Q&A)
 * \[x] Athena table over S3 data
-* \[ ] Power BI allocation-vs-target dashboard
+* \[x] Power BI allocation-vs-target dashboard (built 16 Oct; visual polish still to do)
 * \[ ] README screenshots + LinkedIn post
 
 ## Week 3 (19–23 Oct) — Wealth Copilot (AI layer, part 1)
