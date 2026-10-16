@@ -29,4 +29,12 @@ public class GlobalExceptionHandler {
         problem.setTitle("Price data missing");
         return problem;
     }
+
+    /** A bad request parameter (e.g. 'to' before 'from'): the caller's mistake, so 400. */
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ProblemDetail handleBadArgument(IllegalArgumentException ex) {
+        ProblemDetail problem = ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, ex.getMessage());
+        problem.setTitle("Invalid request");
+        return problem;
+    }
 }
