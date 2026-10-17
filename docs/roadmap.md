@@ -42,8 +42,10 @@ Dates are re-checked at the end of each week.
 * \[ ] Second source: SARB rates / USD-ZAR FX
 * \[ ] Scheduled pipeline runs (EventBridge)
 
-## Week 6 (9–13 Nov) — Deploy + polish
+## Week 6 (9–13 Nov) — Advisor web app + deploy + polish
 
+* \[ ] Swagger UI: clickable docs for every endpoint (`/swagger-ui.html`)
+* \[ ] Advisor web app (served by Spring Boot): clients list, client detail with drift, AI review queue (approve/reject), compliance flags
 * \[ ] Deploy API on AWS (container, cloud database, HTTPS, within budget)
 * \[ ] Demo video, final README, CV update
 
